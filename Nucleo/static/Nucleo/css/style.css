@@ -10,6 +10,13 @@ body{
 a {
     text-decoration: none;
 }
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prim2);
+}
 :root{
     --body: #E4EFFB;
     --body2: #B1B8BF;
@@ -19,6 +26,9 @@ a {
     --accent:#4C49FD;
     --text: #051929;
     --verm: #FF2A2A;
+    --sutil: #808080;
+    --sutil2: #676a6d;
+    --verde: #4ee55e;
 }
     .container{
         width: 100%;
@@ -113,7 +123,7 @@ a {
         font-style: normal;
     }
     .pesquisar{
-        height: 70px;
+        height: 80px;
         width: 90vw;
         display: flex;
         justify-content: center;
@@ -130,9 +140,9 @@ a {
     }
     .pesquisar-cidade-input{
         background-color: var(--body);
-        height: 80%;
+        height: 70%;
         width: 90%;
-        border-radius: 20px;
+        border-radius: 10px;
         outline: none;
         font-size: 20px;
         font-family: "Kanit", sans-serif;
@@ -153,7 +163,7 @@ a {
     }
     .plano{
         display: flex;
-        height: 500px;
+        height: 450px;
         flex-direction: column;
         width: 280px;
         background-color: white;
@@ -173,6 +183,313 @@ a {
         justify-content: center;
         align-items: center;
     }
+    .header-plano span{
+        font-family: "Kanit", sans-serif;
+        color: var(--body);
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .preco{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 90px;
+
+    }
+    .preco span{
+        font-family: "Kanit", sans-serif;
+        font-size: 37px;
+        color: var(--prim);
+        font-weight: bolder;
+    }
+    .preco span::before{
+        content: "R$";
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        padding: 0 2px;
+        color: var(--prim);
+        font-weight: bolder;
+    }
+    .preco span::after{
+        content: "/mês";
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        padding: 0 2px;
+        text-align: start;
+        color: var(--sutil);
+    }
+    .detalhes{
+        font-family: "Kanit", sans-serif;
+        color: var(--sutil);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 1rem;
+        font-size: 12px;
+    }
+    .plano-info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .plano-info div{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;    
+    }
+    .plano-tipo{
+        font-family: "Kanit", sans-serif;
+        color: var(--prim);
+        font-size: 15px;
+    }
+    .plano-giga{
+        font-family: "Kanit", sans-serif;
+        color: var(--accent);
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+
+    .barra{
+        height: 2px;
+        background-color: var(--prim);
+        width: 90%;
+    }
+    .antena-img{
+        height: 700px;
+    }
+    .botao{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .botao button{
+        height: 45px;
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        background-color: var(--verm);
+        width: 80%;
+        outline: none;
+        border-radius: 10px;
+    }
+    .vantagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+    }
+    .vantagens-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        gap: 1.6rem;
+        padding: 1rem 0 0 0;
+    }
+    .vantagem-img{
+        display: flex;
+        justify-content: center;
+
+    }
+    .vantagem-img img{
+        display: flex;
+        height: 90px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .vantagens{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .vantagens-titulo{
+        width: clamp(200px, 60vw, 600px);
+    }
+    .vantagens-titulo span{
+        font-family: "Kanit", sans-serif;
+
+        font-weight: bolder;
+        font-size: 32px;
+        font-weight: bolder;
+        color: var(--prim);   
+    }
+    .vantagem-titulo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-family: "Kanit", sans-serif;
+        font-weight: bolder;
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--prim);  
+    }
+    .vantagem-detalhes{
+        font-family: "Kanit", sans-serif;
+        color: var(--sutil2);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer{
+        width: 90%;
+        align-items: center;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        height: 100px;
+        width: 200px;
+    }
+    .footer-div{
+        display: flex;
+        height: 100%;
+        align-items: center
+    }
+    .logo_G{
+        height: 100px
+    }
+    .footer-whatsapp{
+        height: 180px;
+        
+    }
+    .footer-redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-instagram{
+        height: 90px;
+    }
+    .footer-facebook{
+        height: 90px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .contrato {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .contrato-conteudo {
+        background-color: var(--body);
+        margin: 10% auto;
+        padding: 20px;
+        width: 285px;
+        height: 400px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .contrato-area{
+        font-family: "Kanit", sans-serif;
+        color: var(--sutil);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 1rem;
+        font-size: 10px;
+        text-align: left;
+    }
+    .contrato-fechar {
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .contrato-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--prim);
+        height: 30px;
+        width: 100%;
+        font-family: "Kanit", sans-serif;
+        color: var(--body);
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .contrato-info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contrato-info-detalhes{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Kanit", sans-serif;
+        color: var(--sutil);
+        font-size: 8px;
+
+    }
+
+    .contrato-info-detalhes2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Kanit", sans-serif;
+        color: var(--prim);
+        font-size: 15px;
+    }
+    .contrato-info-detalhes3{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Kanit", sans-serif;
+        color: var(--prim);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .contrato-botao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contrato-botao button{
+        width: 70%;
+        background-color: var(--verde);
+        height: 60px;
+        border-radius: 30px;
+    }
+
+
+
+
+
+
+
+
 
 
     /* cores */
@@ -190,6 +507,16 @@ a {
         .marca-div-img{
             display: none;
         }
+        .vantagens{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            
+        }
+        
+
     }
 
 
@@ -248,9 +575,7 @@ a {
         font-style: normal;
     }
 
-    .antena-img{
-        height: 500px;
-    }
+
 
 
 
