@@ -17,9 +17,9 @@ function Pesquisar(){
         {'nome':'Pedra Lavrada'}
     ]
     for(let i in lista_de_cidades){
-        if( i == elemento){
+      if( i == elemento){
 
-        }
+      }
     }
 }
 function mostrarContrato30() {
