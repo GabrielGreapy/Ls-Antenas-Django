@@ -22,10 +22,24 @@ function Pesquisar(){
         }
     }
 }
-function mostrarContrato20() {
-  document.getElementById("contrato20").style.display = "block";
+function mostrarContrato30() {
+  document.getElementById("contrato30").style.display = "flex";
 }
 
-function fecharContrato20() {
-  document.getElementById("contrato20").style.display = "none";
+function fecharContrato30() {
+  document.getElementById("contrato30").style.display = "none";
+}
+function mostrarContrato50() {
+  document.getElementById("contrato50").style.display = "flex";
+}
+
+function fecharContrato50() {
+  document.getElementById("contrato50").style.display = "none";
+}
+function mostrarContrato100() {
+  document.getElementById("contrato100").style.display = "flex";
+}
+
+function fecharContrato100() {
+  document.getElementById("contrato100").style.display = "none";
 }
