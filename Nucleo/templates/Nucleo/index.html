@@ -47,7 +47,7 @@
                 </div>
             </div>        
             <div class="contrato-botao">
-                <a class="contrato-botao-button" href="https://wa.me/558393822823?text=Oi%2C%20estou%20interessado%20no%20plano%20Flex%2020" target="_blank"><button>Whatsapp Aberto</button></a>
+                <a class="contrato-botao-button" href="https://wa.me/558393822823?text=Oi%2C%20estou%20interessado%20no%20plano%20Flex%2030" target="_blank"><button>Whatsapp Aberto</button></a>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
                 <div class="contrato-preco-valor">
                     R$ 149,00
                 </div>
-            </div>        
+            </div>     
             <div class="contrato-botao">
                 <a class="contrato-botao-button" href="https://wa.me/558393822823?text=Oi%2C%20estou%20interessado%20no%20plano%20Flex%2050" target="_blank"><button>Whatsapp Aberto</button></a>
             </div>
@@ -139,6 +139,16 @@
     </div>
 
 
+    <div id="pesquisado" class="contrato">
+        <div class="pesquisado-conteudo">
+            <div>
+                <span class="contrato-fechar" onclick="fecharPesquisa()">&times;</span>
+            </div>
+            <div id="resultado-cidade"></div>
+        </div>
+    </div>
+
+
 
 
 
@@ -182,11 +192,29 @@
         </div>
         <div class="pesquisar">
             <div class="pesquisar-cidade">
-                <input id="pesquisa" type="text" class="pesquisar-cidade-input" placeholder="Pesquisar sua cidade...">
+                <input id="pesquisa" list="lista-cidades" type="text" class="pesquisar-cidade-input" placeholder="Pesquisar sua cidade...">
                 <img src="{% static 'Nucleo/img/pesquisar.png' %}" 
-                alt="Pesquisar" class="pesquisar-img" onclick="Pesquisar()">
+                    alt="Pesquisar" class="pesquisar-img" onclick="Pesquisar()">
+
+                <datalist id="lista-cidades">
+                    <option value="Picuí">
+                    <option value="Frei martinho">
+                    <option value="Barauna">
+                    <option value="Barra de Santa Rosa">
+                    <option value="Cuité">
+                    <option value="Cubati">
+                    <option value="Nova Palmeira">
+                    <option value="Nova Floresta">
+                    <option value="Sossego">
+                    <option value="São Vincente">
+                    <option value="Solidade">
+                    <option value="Damião">
+                    <option value="Algodão de Jnadaíra">
+                    <option value="Pedra Lavrada">
+                </datalist>
             </div>
         </div>
+
     </div>
     <div class="container">
 
@@ -370,7 +398,6 @@
             </div>
         </div>
     </footer>
-    
     <script src="{% static 'Nucleo/js/script.js' %}"></script>
 </body>
 </html>
