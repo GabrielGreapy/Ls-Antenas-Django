@@ -46,8 +46,8 @@ footer{
         align-items: center;
     }
     .header-logo{
-        height: 70px;
-        width: 140px;
+        height: 110px;
+        width: 190px;
         
     }
     .header-img {
@@ -56,7 +56,7 @@ footer{
     }
     .header-phone{
         display: flex;
-        height: 60px;
+        height: 70px;
         flex-direction: row;
         align-items: center;
         width: clamp(0, 100px, 160px);
@@ -83,11 +83,12 @@ footer{
 
     .marca-info{
         display: flex;
-        justify-content: center;
+        padding: 100px;
         align-items: center;
         flex-direction: column;
         width: 30vw;
-        padding: 100px;   
+ 
+        
     }
     .marca-div-img{
         width: 70vw;
@@ -98,14 +99,15 @@ footer{
     }
 
     .titulo img{
-        height: clamp(100px, 200px, 300px);
+        height: clamp(200px, 300px, 400px);
     
     }
     .sub-titulo{
+        margin: -60px;
         font-family: "Goldman", sans-serif;
-        font-weight: 700;
+        
         font-style: normal;
-        font-size: 22px;
+        font-size: 16px;
     }
     .desc{
         font-family: "Goldman", sans-serif;
@@ -353,8 +355,8 @@ footer{
         justify-content: space-between;
     }
     .footer-logo{
-        height: 100px;
-        width: 200px;
+        height: 125px;
+        width: 250px;
     }
     .footer-div{
         display: flex;
