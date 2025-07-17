@@ -72,6 +72,8 @@ footer{
     .welcome-banner{
         height: clamp(500px , 70vh , 100%);
         width: 100%;
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
     }
     .marca{
         display: flex;
@@ -621,6 +623,12 @@ footer{
         /* font-weight: <weight>; */
         font-style: normal;
     }
+    
+
+    .fade-out {
+        opacity: 0;
+    }
+
 
 
 

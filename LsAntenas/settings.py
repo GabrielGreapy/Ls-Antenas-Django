@@ -25,11 +25,21 @@ from dotenv import load_dotenv
 load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in productio
+
 DEBUG = True
+# False
+# Segurança e headers adequados para produção
+# SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+
 
 ALLOWED_HOSTS = ['*']
-
+# 'lsantenasinternetrural.com.br' , 'www.lsantenasinternetrural.com.br'
 
 # Application definition
 
