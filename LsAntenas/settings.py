@@ -27,19 +27,19 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in productio
 
-DEBUG = True
-# False
+# DEBUG = True
+DEBUG = False
 # Segurança e headers adequados para produção
-# SECURE_SSL_REDIRECT = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = False
-SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+# SECURE_SSL_REDIRECT = False
+# SESSION_COOKIE_SECURE = False
+# CSRF_COOKIE_SECURE = False
 
 
-ALLOWED_HOSTS = ['*']
-# 'lsantenasinternetrural.com.br' , 'www.lsantenasinternetrural.com.br'
+ALLOWED_HOSTS = ['lsantenasinternetrural.com.br' , 'www.lsantenasinternetrural.com.br']
+# 
 
 # Application definition
 
